@@ -7,5 +7,5 @@ resources:
 
 images:
 - name: goserver
-  newName: lccoronel/gitops-full-cycle
-  newTag: novatag
+  newName: DOCKER_USERNAME/gitops-full-cycle
+  newTag: 6cdd35a56ba1e27f2165499b7f1e3b17cbe7c8a0
