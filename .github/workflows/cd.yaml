@@ -21,7 +21,7 @@ jobs:
           repository: ${{ secrets.DOCKER_USERNAME }}/gitops-full-cycle
           tags: ${{ github.sha }}, latest
 
-      - name: Setups kustomize
+      - name: Setup kustomize
         uses: imranismail/setup-kustomize@v1
         with:
           kustomize-version: "3.6.1"
@@ -37,7 +37,7 @@ jobs:
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
-          git add -am "Bump docker image"
+          git commit -am "Bump docker image"
 
       - name: Push
         uses: ad-m/github-push-action@master
