@@ -31,7 +31,7 @@ jobs:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         run: |
           cd k8s
-          kustomize edit set image goserver=DOCKER_USERNAME/gitops-full-cycle:${{ github.sha }}
+          kustomize edit set image goserver=$DOCKER_USERNAME/gitops-full-cycle:${{ github.sha }}
 
       - name: Commit
         run: |
