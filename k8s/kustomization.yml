@@ -8,4 +8,4 @@ resources:
 images:
 - name: goserver
   newName: DOCKER_USERNAME/gitops-full-cycle
-  newTag: 6cdd35a56ba1e27f2165499b7f1e3b17cbe7c8a0
+  newTag: 0a597026b93f32c617510b2a5049bac61f11bfa1
